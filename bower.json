@@ -1,0 +1,27 @@
+{
+  "name": "remarkable-classy",
+  "main": "index.js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/andrey-p/remarkable-classy",
+  "authors": [
+    "Andrey Pissantchev"
+  ],
+  "description": "Plugin for Remarkable - add classes to your markdown",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "markdown",
+    "remarkable",
+    "remarkable-plugin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

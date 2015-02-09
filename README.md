@@ -1,27 +1,52 @@
 remarkable-classy
 ===
 
-This is a plugin for the [remarkable](https://github.com/jonschlinkert/remarkable) markdown parser.
+This is a plugin for the [remarkable](https://github.com/jonschlinkert/remarkable) markdown parser. It works equally well on the server (node.js/io.js) and in the browser.
 
 Need to style some text written with markdown but are lacking that extra *oomph*? Plug in `remarkable-classy` to make your markup remarkable *and* classy.
 
-Install
+Install (server)
 ---
 
 ```
 $ npm install --save remarkable-classy
 ```
 
-Plug
+Install (browser)
 ---
 
 ```
+$ bower install --save remarkable-classy
+```
+
+Plug
+---
+
+On the server, or using Browserify:
+
+```js
 var classy = require("remarkable-classy"),
   Remarkable = require("remarkable"),
   md = new Remarkable();
 
 md.use(classy);
 ```
+
+For plain old browser usage, without Browserify, just include the JavaScript files for remarkable and remarkable-classy first:
+
+```html
+<script src="/bower_components/remarkable/dist/remarkable.min.js"></script>
+<script src="/bower_components/remarkable-classy/index.js"></script>
+```
+
+Then, in your JavaScript code, use the global `classy` name with the global `Remarkable` name:
+
+```js
+var md = new Remarkable();
+md.use(classy);
+```
+
+
 
 Use
 ---
